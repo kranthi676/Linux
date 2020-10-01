@@ -31,6 +31,7 @@ pwd
 mkdir
 rm
 rm -rf
+rm -rf *.*
 yum install
 yum remove
 yum install -y
@@ -199,3 +200,11 @@ args = parser.parse_args()
 print("The Hostnameof the instance is : %s" % args.hostname)
 print("The Securitygroupof the instane is : %s" %args.securitygroup)
 print("The Type of the Instance : %s" %args.type)
+
+nc -nv IPaddress
+nc IPaddress Port_number
+showmount -e IPaddress
+df -h (To Show Mount)
+hostname
+dig Domain_name
+dig Domain_name Record_Type (Ex: dig www.google.com MX)
